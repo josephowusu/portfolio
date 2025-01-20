@@ -1,0 +1,61 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    danger: {
+                        DEFAULT: '#d9534f',
+                        hover: '#c43f3b',
+                    },
+                    primary: {
+                        DEFAULT: '#0386e9',
+                        hover: '#0275d8',
+                    },
+                    dark: {
+                        DEFAULT: '#1e1e1e',
+                        hover: '#3e3e42'
+                    },
+                    dark2: {
+                        DEFAULT: '#2d2d30',
+                        hover: '#3e3e42'
+                    }
+                }
+            }
+        }
+    }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    .monReg {
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    html, body {
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .irregular-circle {
+        width: 600px;
+        height: 500px;
+        border-radius: 45% 55% 60% 40% / 55% 45% 40% 60%;
+        background: #5bc0de;
+        overflow: hidden;
+        position: relative;
+    }
+    .nav-link {
+        transition: color 0.3s ease;
+    }
+
+    .activeLink {
+        color: #0275d8;
+        font-weight: bold;
+    }
+</style>

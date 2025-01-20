@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Owusu - Full Stack Developer</title>
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <div class="bg-white" style="padding-left: 20px; padding-right: 20px;">
+        <header class="sticky inset-x-0 top-0 z-50 bg-white lg:px-12 transition-shadow duration-300" id="stickyHeader" style="border-radius: 20px;">
+          <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only" style="color: #555">Joseph Owusu</span>
+                <img class="h-10 w-auto" src="/images/logo.png" alt="" style="margin-left: 20px;">
+              </a>
+            </div>
+            <div class="flex lg:hidden">
+              <button id="menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Open main menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+              <a href="#about" class="text-sm font-semibold text-gray-900 monReg">About</a>
+              <a href="#experiences" class="text-sm font-semibold text-gray-900 monReg">Experiences</a>
+              <a href="#projects" class="text-sm font-semibold text-gray-900 monReg">Projects</a>
+              <a href="#skills" class="text-sm font-semibold text-gray-900 monReg">Skills</a>
+              <a href="#contact" class="text-sm font-semibold text-gray-900 monReg">Contact Me</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+              <a href="https://drive.google.com/file/d/1Ro6mnjWYgfWMhGmnKkTT2lxQmPKhQ1tY/view?usp=share_link" class="text-sm font-semibold text-gray-900 monReg">Download Resume <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </nav>
+
+          <div id="mobile-menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 z-50"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Joseph Owusu</span>
+                  <img class="h-8 w-auto" src="/images/react.png" alt="">
+                </a>
+                <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 monReg activeLink">About</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 monReg">Experiences</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 monReg">Projects</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 monReg">Skills</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 monReg">Contact Me</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="https://drive.google.com/file/d/1Ro6mnjWYgfWMhGmnKkTT2lxQmPKhQ1tY/view?usp=share_link" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50 monReg">Download Resume</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section id="about" class="relative overflow-hidden bg-white relative isolate px-6 lg:px-8" style="padding-bottom: 20px;">
+            <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+                <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+                    <div class="sm:max-w-lg">
+                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl monReg">Joseph Owusu <br /> Full Stack Software Engineer</h1>
+                        <p class="mt-4 text-xl text-gray-500 monReg" style="font-size: 15px;">I specialize in creating innovative and scalable solutions tailored to meet diverse project needs. By leveraging modern tools and techniques, I build seamless, efficient, and engaging experiences for users across various platforms.</p>
+                    </div>
+                    <div>
+                        <div class="mt-10">
+                            <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-6xl">
+                                <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                                    <div class="irregular-circle hidden sm:flex sm:justify-center sm:items-center">
+                                        <img src="/images/image1.png" class="w-82 self-center" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <a href="#" class="inline-block rounded-md border border-transparent bg-primary px-8 py-3 text-center font-medium text-white hover:bg-primary-hover">
+                                Contact Me
+                            </a>
+                            <a href="https://www.linkedin.com/in/joseph-owusu-43940824b/" class="inline-block rounded-md border border-transparent bg-danger px-8 py-3 text-center font-medium text-white hover:bg-danger-hover">
+                                LinkedIn 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- px-6 py-24 sm:py-32 lg:px-8 -->
+        <section id="experiences" class="relative isolate overflow-hidden bg-white " style="padding-bottom: 30px;">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+            <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+              <figure class="mt-10">
+                <h2 class="text-center text-base/7 font-semibold" style="margin-bottom: 10px; color: #d9534f;">Work Experiences</h2>
+                <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9 monReg">
+                  <p>Below are highlights of my professional roles and accomplishments </p>
+                </blockquote>
+                
+                <ol class="relative border-s border-gray-200 dark:border-gray-700" style="margin-top: 80px;">                  
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2024 – November 2024</time>
+                        <h3 class="text-lg font-semibold text-gray-500 dark:text-gray-800">Full Stack Software Engineer (Remote Project - USA, Philadelphia)</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-600">Referred by a client to a trusted associate in the USA running a logistics service, I spearheaded the development of a comprehensive platform to optimize their operations. Key contributions include:</p>
+                        <ul class="list-disc pl-6 text-gray-500 dark:text-gray-600">
+                            <li><strong>Integrated Solution:</strong> Architected and deployed a unified HRM, CRM, and CMS system, leveraging technologies such as <em>JavaScript (Node.js, React.js, React Native), MySQL and SQLite</em>.</li>
+                            <li><strong>Centralized Database:</strong> Designed and implemented a scalable and secure database architecture, ensuring seamless integration of modules and efficient data flow.</li>
+                            <li><strong>Workflow Optimization:</strong> Developed tools for real-time operations monitoring, task tracking, and workflow management, enhancing productivity and operational oversight. eg. Task sharing component in the application as well as a Memo app where the administrators of the app can share ideas, direction, and other encrypted information privately within the application</li>
+                            <li><strong>End-to-End System Ownership:</strong> Managed the full software development lifecycle, including requirement analysis, architecture design, implementation, testing, and deployment.</li>
+                            <li><strong>Agile Collaboration:</strong> Collaborated closely with stakeholders to adapt solutions to evolving business needs, ensuring alignment with startup goals and priorities.</li>
+                            <li><strong>Technical Support and Maintenance:</strong> Provided ongoing system maintenance, debugging, and feature updates, ensuring reliability and scalability.</li>
+                            <li><strong>DevOps Integration:</strong> Set up CI/CD pipelines to streamline deployments and improve development efficiency.</li>
+                            <li><strong>Startup Culture Adaptability:</strong> Took on multifaceted responsibilities such as feature prioritization, quick prototyping, and resource-efficient problem-solving to meet the fast-paced demands of a startup environment.</li>
+                        </ul>
+                    </li>
+
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2024 – November 2024</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-800">Full Stack Software Engineer (Contract - Hybrid) Coastal Commerce Micro-Finance, Ghana</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-600">Contributed to the mission of Coastal Commerce Microfinance Ltd, a licensed institution dedicated to fostering economic growth through accessible financial solutions. Key achievements include:</p>
+                        <ul class="list-disc pl-6 text-gray-500 dark:text-gray-600">
+                            <li><strong>Loan Performance Manager (Electron Desktop App):</strong> Designed and implemented a comprehensive system to monitor and evaluate loan performance metrics, leveraging technologies such as <em>Electron, Node.js, and MySQL</em>, enabling data-driven decision-making and operational efficiency.</li>
+                            <li><strong>HR Management System (Electron Desktop App):</strong> Developed a centralized HR platform to streamline recruitment, payroll, employee record management, and performance tracking, improving organizational oversight and productivity.</li>
+                            <li><strong>Clock-In System (Mobile App and Desktop App):</strong> Engineered a mobile application for attendance tracking and workforce management using <em>React Native and Firebase</em>, enhancing reliability and real-time monitoring capabilities.</li>
+                            <li><strong>Database Optimization:</strong> Designed and managed efficient database schemas to support scalable operations and seamless integration between desktop and mobile platforms.</li>
+                            <li><strong>Cross-Platform Development:</strong> Delivered solutions adaptable to both desktop and mobile environments, ensuring flexibility and accessibility for users.</li>
+                            <li><strong>Stakeholder Collaboration:</strong> Worked closely with the leadership team to understand business requirements, translate them into technical solutions, and deliver on tight deadlines.</li>
+                            <li><strong>Agile Methodologies:</strong> Adopted agile practices for iterative development, ensuring continuous delivery of high-quality software aligned with client needs.</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October 2022 – March 2024</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-800">Full Stack Software Engineer (Onsite) LoGig, LLC - Takoradi, Ghana</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-600">LoGig, LLC is a leading software and innovative solutions development company specializing in enterprise solutions, software development, web applications, business process automation, and cybersecurity. As a key member of the team, I contributed to building, maintaining, troubleshooting, enhancing, and expanding their existing systems. Below are two major projects I helped developed:</p>
+                        
+                        <h4 class="text-md font-semibold text-gray-900 dark:text-gray-600">Ovasyte Enterprise System (ERP)</h4>
+                        <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-600">
+                            Ovasyte is a flagship product of LoGig LLC, designed as an enterprise management solution tailored for Micro, Small, and Medium Enterprises in developing countries. (Visit: <a href="https://ovasyte.com" class="text-blue-500 hover:underline">ovasyte.com</a>)
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-500 dark:text-gray-600">
+                            <li>Supervised and collaborated with a team of four engineers to design and develop Ovasyte, now utilized by 25+ businesses across Ghana.</li>
+                            <li>Translated complex client requirements into user-friendly software solutions, resulting in five additional business acquisitions within the sector.</li>
+                            <li>Automated intricate technological challenges, achieving a customer satisfaction rate exceeding 84%.</li>
+                            <li>Upgraded and optimized system features, enhancing performance, reliability, and ensuring timely bug resolution.</li>
+                            <li>Managed the product lifecycle from ideation to successful deployment.</li>
+                        </ul>
+                        
+                        <h4 class="text-md font-semibold text-gray-900 dark:text-gray-600" style="margin-top: 20px">Twin City Connect (TCC / STMA Project)</h4>
+                        <p class="mb-2 text-base font-normal text-gray-500 dark:text-gray-600">
+                            Twin City Connect, a government-backed initiative, is an all-in-one management system encompassing modules for HR, passport creation, funeral certification, billboards, taxes, land sales, and approvals. (Visit: <a href="https://tcc.stma.gov.gh" class="text-blue-500 hover:underline">tcc.stma.gov.gh</a>)
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-500 dark:text-gray-600">
+                            <li>Led API and frontend development for both desktop and mobile applications, ensuring cross-platform functionality.</li>
+                            <li>Designed an intuitive user experience to ensure accessibility and efficiency across various platforms.</li>
+                            <li>Strategized and enhanced database methodologies for improved security and maintainability.</li>
+                        </ul>
+                        
+                        <p class="mt-4 text-base font-normal text-gray-500 dark:text-gray-600">
+                            <strong>Technologies Used:</strong> JavaScript, React.js, Next.js, Node.js, SQLite, WebSocket, React Native, MySQL, HTML, CSS, Electron, data enryption and decryption and Agile methodologies.
+                        </p>
+                    </li>
+                    
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-500">January 2021 – September 2022</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-800">Full Stack Software Engineer (Bluesea IT Consultancy)</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-600">Delivered tailored software solutions for logistics companies:</p>
+                        <ul class="list-disc pl-6 text-gray-500 dark:text-gray-600">
+                            <li>Developed and maintained multiple websites, ensuring performance and user experience.</li>
+                            <li>Created automation tools to streamline workflows.</li>
+                            <li>Enhanced database systems to optimize performance.</li>
+                        </ul>
+                    </li>
+                    <li class="ms-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-500">July 2018 – October 2020</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-800">Software Instructor (Institute Of Technological Studies)</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-600">Provided advanced technical education in:</p>
+                        <ul class="list-disc pl-6 text-gray-500 dark:text-gray-600">
+                            <li>Microsoft Office Suite and workplace productivity.</li>
+                            <li>Front-end development (HTML, CSS, JavaScript).</li>
+                            <li>Database management (MySQL, Microsoft Access).</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+
+
+              </figure>
+            </div>
+        </section>
+        
+        <!-- <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                <figure class="mt-10">
+                    <h2 class="text-center text-base/7 font-semibold" style="margin-bottom: 10px; color: #d9534f;">Skill</h2>
+                    <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9 monReg">
+                        <p>Below are highlights of my professional roles and accomplishments </p>
+                    </blockquote>
+                </figure>
+            </div>
+        </section> -->
+
+        <section id="skills" class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+            <div class="mx-auto max-w-2xl lg:max-w-5xl">
+                <figure class="mt-10">
+                    <h2 class="text-center text-base/7 font-semibold" style="margin-bottom: 10px; color: #d9534f;">Skills</h2>
+                    <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9 monReg">
+                        <p>Below are highlights of my professional roles and accomplishments</p>
+                    </blockquote>
+                </figure>
+                <div class="mt-12 flex flex-col items-start sm:flex-row sm:justify-end sm:items-start space-y-6 sm:space-y-0 sm:space-x-6">
+                    <!-- Programming Languages -->
+                    <div class="bg-gray-100 rounded-lg shadow p-6 max-w-xs">
+                        <h3 class="text-lg font-semibold text-gray-800">Programming Languages</h3>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Typescript</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">PHP</span>
+                        </div>
+                    </div>
+                    <!-- Frameworks -->
+                    <div class="bg-gray-100 rounded-lg shadow p-6 max-w-xs">
+                        <h3 class="text-lg font-semibold text-gray-800">Frameworks</h3>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Angular</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">React Native</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Bootstrap</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Vue.js</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Next.js</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">React.js</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Express.js</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">jQuery</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Laravel</span>
+                            <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">PHP Desktop</span>
+                        </div>
+                    </div>
+                    <!-- Development Tools -->
+                    <div class="bg-gray-100 rounded-lg shadow p-6 max-w-xs">
+                        <h3 class="text-lg font-semibold text-gray-800">Development Tools</h3>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">VS Code</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Webpack</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">PyCharm</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Eclipse</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Android Studio</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Sublime Text</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Atom</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Postman</span>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+                        </div>
+                    </div>
+                    <!-- Version Control Tools -->
+                    <div class="bg-gray-100 rounded-lg shadow p-6 max-w-xs">
+                        <h3 class="text-lg font-semibold text-gray-800">Version Control Tools</h3>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <span class="inline-block bg-red-100 text-red-800 text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                            <span class="inline-block bg-red-100 text-red-800 text-sm font-medium px-3 py-1 rounded-full">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="/images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Project Title 1</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project highlighting its purpose and technologies used.</p>
+                            <div class="mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project Card 2 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="/images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Project Title 2</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project highlighting its purpose and technologies used.</p>
+                            <div class="mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project Card 3 -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="/images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800">Project Title 3</h3>
+                            <p class="text-gray-600 mt-2">A brief description of the project highlighting its purpose and technologies used.</p>
+                            <div class="mt-4">
+                                <a href="#" class="text-blue-500 hover:underline">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Additional Project Cards as Needed -->
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <section id="contact" class="bg-dark2 dark:bg-white-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-800 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl" style="font-size: 16px;">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@mail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-4 bg-dark md:p-8 lg:p-10 dark:bg-dark-800">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <span class="flex justify-center items-center font-semibold text-gray-900 dark:text-white">
+                <img class="h-10 w-auto" src="/images/logo-rm.png" style="margin-right: 15px;" />
+                Joseph Owusu    
+            </span>
+            <p class="my-6 text-gray-500 dark:text-gray-400">Feel free to reach out for collaborations or inquiries</p>
+            <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+                <li>
+                    <a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#experiences" class="mr-4 hover:underline md:mr-6">Experiences</a>
+                </li>
+                <li>
+                    <a href="#projects" class="mr-4 hover:underline md:mr-6 ">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills" class="mr-4 hover:underline md:mr-6">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact" class="mr-4 hover:underline md:mr-6">Contact</a>
+                </li>
+            </ul>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#" class="hover:underline">Joseph Owusu</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu visibility
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuButton = document.getElementById('close-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        let lastScrollY = 0;
+
+        document.addEventListener('scroll', () => {
+            const header = document.getElementById('stickyHeader');
+            const currentScrollY = window.scrollY
+            if (currentScrollY > lastScrollY && currentScrollY > 0) {
+                header.classList.add('shadow-lg')
+            } else {
+                header.classList.remove('shadow-lg')
+            }
+
+            lastScrollY = currentScrollY;
+        })
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            const updateActiveNavLink = () => {
+                let currentSectionId = "";
+
+                sections.forEach((section) => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 0 && rect.bottom > 0) {
+                        currentSectionId = section.id;
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    if (link.getAttribute("href") === `#${currentSectionId}`) {
+                        link.classList.add("activeLink");
+                    } else {
+                        link.classList.remove("activeLink");
+                    }
+                });
+            }
+            updateActiveNavLink()
+            document.addEventListener("scroll", updateActiveNavLink)
+        })
+
+    </script>
+</body>
+</html>
+            
